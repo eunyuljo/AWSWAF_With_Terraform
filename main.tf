@@ -2,6 +2,7 @@ provider "aws" {
   region = "ap-northeast-2"  # 사용하는 리전에 맞게 변경하세요
 }
 
+
 # 사용자 데이터 변수 정의
 variable "user_data_file" {
   default = "user_data.sh"
@@ -152,3 +153,4 @@ resource "aws_lb_listener" "ALBListener" {
 }
 
 data "aws_availability_zones" "available" {}
+
